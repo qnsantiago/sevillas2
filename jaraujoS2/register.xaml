@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jaraujoS2.register">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Registrarse" FontSize="18" HorizontalTextAlignment="Center"/>
+
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" FontSize="16" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="NOMBRE" Grid.Row="0" Grid.Column="1"/>
+                <Picker Title="Edad" x:Name="pcEdades" SelectedIndexChanged="pcEdades_SelectedIndexChanged" Grid.Row="0" Grid.Column="2">
+                    <Picker.Items>
+                        <x:String>20</x:String>
+                        <x:String>21</x:String>
+                        <x:String>22</x:String>
+                        <x:String>23</x:String>
+                        <x:String>24</x:String>
+                        <x:String>25</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button x:Name="btnMostrar" Text="MOSTRAR" Clicked="btnMostrar_Clicked" Grid.Row="1" Grid.Column="1"></Button>
+
+
+            </Grid>
+                 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

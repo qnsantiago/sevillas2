@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jaraujoS2.Page1">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="16" TextColor="Red" ></Label>
+            <Label Text="Semana 2" HorizontalTextAlignment="Center" FontSize="18"
+                 />
+            <Picker Title="Ciudades de Ecuador" x:Name="pcCiudades" SelectedIndexChanged="pcCiudades_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Quito</x:String>
+                    <x:String>Ambato</x:String>
+                    <x:String>Latacunga</x:String>
+                    <x:String>Carchi</x:String>
+                    <x:String>Tena</x:String>
+                </Picker.Items>
+                
+            
+                
+            </Picker>
+                    <DatePicker x:Name="dpFechas" Date="06/06/2023" Format="M/d/yyyy"></DatePicker>
+            <Button x:Name="btnMostar" Text="Mostrar fecha" Clicked="btnMostar_Clicked" ></Button>
+                        
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
